@@ -42,10 +42,10 @@ steghide embed -cf myimage.jpg -ef app.apk
 
 - Set a password when prompted (optional).
 
-####🔹 Step 3: Send or Share Image
+#### 🔹 Step 3: Send or Share Image
 You can now share myimage.jpg. It appears as a normal image.
 
-####🔹 Step 4: Extract APK from Image
+#### 🔹 Step 4: Extract APK from Image
 On the target system:
 
 ```bash
@@ -57,16 +57,16 @@ steghide extract -sf myimage.jpg
 
 ## 🔧 Method 2: Append APK to PNG File (Linux Shortcut)
 ### 🧩 Step-by-Step
-####🔹 Step 1: Concatenate Files
+#### 🔹 Step 1: Concatenate Files
 ```bash
 cat image.png app.apk > hidden.png
 ```
-####🔹 Step 2: Send/Store hidden.png
+#### 🔹 Step 2: Send/Store hidden.png
 It still opens as an image in image viewers.
 
 But the APK is appended.
 
-####🔹 Step 3: Extract APK (Manual Methods)
+#### 🔹 Step 3: Extract APK (Manual Methods)
 ```bash
 binwalk -e hidden.png
 ```
@@ -82,7 +82,7 @@ with open("hidden.png", "rb") as f:
 ```
 ## 🔧 Method 3: Encode APK Inside Image Metadata (ExifTool)
 ### 🧩 Step-by-Step
-####🔹 Hide APK in Comment
+#### 🔹 Hide APK in Comment
 ```bash
 exiftool -Comment<=app.apk image.jpg
 ```
