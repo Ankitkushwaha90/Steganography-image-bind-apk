@@ -40,7 +40,7 @@ steghide embed -cf myimage.jpg -ef app.apk
 -ef: embedded file (APK)
 ```
 
-Set a password when prompted (optional).
+- Set a password when prompted (optional).
 
 ####🔹 Step 3: Send or Share Image
 You can now share myimage.jpg. It appears as a normal image.
@@ -55,7 +55,7 @@ steghide extract -sf myimage.jpg
 
 - Result: app.apk will be extracted.
 
-##🔧 Method 2: Append APK to PNG File (Linux Shortcut)
+## 🔧 Method 2: Append APK to PNG File (Linux Shortcut)
 ### 🧩 Step-by-Step
 ####🔹 Step 1: Concatenate Files
 ```bash
