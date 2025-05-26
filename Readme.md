@@ -86,7 +86,7 @@ with open("hidden.png", "rb") as f:
 ```bash
 exiftool -Comment<=app.apk image.jpg
 ```
-####🔹 Extract Hidden APK
+#### 🔹 Extract Hidden APK
 ```bash
 exiftool -Comment image.jpg > extracted.apk
 ```
